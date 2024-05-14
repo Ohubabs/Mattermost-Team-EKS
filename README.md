@@ -30,15 +30,15 @@ Mattermost website: https://mattermost.com/
 
 2 – Once the instance is setup, clone this repository
 
-3 –  Execute the bash script for installing the aws cli v2, 
+3 –  Execute the bash script for installing the aws cli v2 to enable terraform to communicate with the AWS website via its API.
 
-4 - Execute the bash script for installing  Kubectl 
+4 - Execute the bash script for installing  Kubectl Cli to interact with the Kubernetes cluster after provisioning.
 
-5 - Execute the bash script for installing  Terraform with Vault for extra security.
+5 - Execute the bash script for installing the Terraform CLI for provisioning cloud resources on AWS using code and Vault CLI for extra security.
 
 6 – Deploy the Mattermost Cluster within the Mattermost VPC and necessary permissions for setting up pods with EBS storage, VPC CNI networking, and Application LoadBalancer exposure.
 
-7 – After cluster deployment, update kube config file
+7 – After cluster deployment, update kubeconfig file
 
 8 – Setup Cluster Namespaces 
 
@@ -141,7 +141,7 @@ Execute the following commands:
     terraform apply --auto-approve
 
 
-### Step 12: Deploy the Application LoadBalancer Helm Chart to handle the traffic in and out to applications running in pods within the Mattermost Cluster:
+### Step 12: Deploy the Application LoadBalancer Helm Chart to enable the provisioning of Application LoadBalancers on AWS for handling the web traffic going in and coming out to applications running in pods within the Mattermost Cluster:
 
 Enter the alb/ directory
 Execute the following commands:
