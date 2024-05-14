@@ -64,6 +64,10 @@ Mattermost website: https://mattermost.com/
 
 ### Step 1: Launch an EC2 instance
 
+### Step 2: Clone this repository
+
+    git clone https://github.com/Ohubabs/Mattermost-Team-EKS.git
+
 ### Step 3: Install AWS CLI v2
 
 To install AWS cli v2 and login to AWS account, execute the following commands:
