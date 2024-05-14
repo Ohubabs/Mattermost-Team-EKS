@@ -129,7 +129,7 @@ Execute the following commands:
     terraform plan
     terraform apply --auto-approve
 
-##### Step 11: Deploy an Certificate Manager Helm Chart to handle the issuing of Lets Encrypt certificates to secure apps within the Mattermost Cluster exposed to the internet as websites.
+### Step 11: Deploy the Certificate Manager Helm Chart to handle the issuing of Lets Encrypt certificates to secure apps within the Mattermost Cluster exposed to the internet as websites.
 
 Enter the encryption/ directory
 Execute the following commands:
