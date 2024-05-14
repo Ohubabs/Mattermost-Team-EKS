@@ -1,7 +1,5 @@
 # Mattermost-Team-EKS
 
-# Mattermost Project
-
 ## Background
 
 In my UT Austin Post-Graduate Cloud Computing course, I was given a project assignment to manually deploy an open source team collaboration website called Mattermost connected to a MYSQL database. For extra security, a bastion host design setup was to be used with the database installed on an instance within a private subnet leaving only the Mattermost website exposed to the internet. In addition, the instructions stated that  provisioning of the instances and setting up the network configurations should be done via the AWS Management Console website. As a DevOps Engineer, I had a problem with the manual workflow of the project which made it time-consuming and error-prone. So, I decided to make a few changes. First instead of the AWS Management Console, I will use a popular Infrastructure-as-a-Code tool called Terraform to provision all cloud infrastructure. Next, in lieu of manually installing Mattermost and MYSQL, I will be using containers of both software programs and deploying them within an EKS Kubernetes cluster for high level orchestration. Then, I will securely expose the Mattermost web app to the internet with a custom url using an NGINX Ingress Controller that encrypts data moving in and out of the cluster using Lets Encrypt Certificates issued by Cert Manager deployed within the cluster. Finally, I will deploy Prometheus and Grafana to enable real-time monitoring of the cluster  
@@ -71,7 +69,7 @@ To install AWS cli v2 and login to AWS account, execute the following commands:
 
 After installing AWS cli v2, setup access to your AWS account by executing the bash shell script below then entering the necessary information when prompted:
 	
-	  aws configure
+    aws configure
 
 Enter you AWS Account Access ID, Secret Key, region for deploying your resources, and output type (Recommend: json)
 
