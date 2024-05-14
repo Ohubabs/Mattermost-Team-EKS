@@ -1,0 +1,59 @@
+## Deployment Strategy
+## ref: https://kubernetes.io/docs/concepts/workloads/controllers/deployment/#strategy
+deploymentStrategy:
+  type: RollingUpdate
+  rollingUpdate: null
+
+persistence:
+  ## This volume persists generated data from users, like images, attachments...
+  ##
+  data:
+    enabled: true
+    size: 10Gi
+    ## If defined, volume.beta.kubernetes.io/storage-class: <storageClass>
+    ## Default: volume.alpha.kubernetes.io/storage-class: default
+    ##
+    storageClass: mattermost-sc
+    accessMode: ReadWriteOnce
+service:
+  type: ClusterIP #NodePort
+  externalPort: 80
+  internalPort: 8065
+## If use this please disable the mysql chart by setting mysql.enable to false
+externalDB:
+  enabled: false
+
+  ## postgres or mysql
+  externalDriverType: ""
+
+  ## postgres:  "<USERNAME>:<PASSWORD>@<HOST>:5432/<DATABASE_NAME>?sslmode=disable&connect_timeout=10"
+  ## mysql:     "<USERNAME>:<PASSWORD>@tcp(<HOST>:3306)/<DATABASE_NAME>?charset=utf8mb4,utf8&readTimeout=30s&writeTimeout=30s"
+  externalConnectionString: ""
+  
+mysql:
+  enabled: true
+  mysqlRootPassword: ""
+  mysqlUser: "ohubabs"
+  mysqlPassword: "ohubabs1"
+  mysqlDatabase: mattermost
+
+  repository: mysql
+  imageTag: '8.0.18'
+  testFramework:
+    enabled: false
+
+  persistence:
+    enabled: true
+    ## If defined, storageClassName: <storageClass>
+    ## If set to "-", storageClassName: "", which disables dynamic provisioning
+    ## If undefined (the default) or set to null, no storageClassName spec is
+    ##   set, choosing the default provisioner.  (gp2 on AWS, standard on
+    ##   GKE, AWS & OpenStack)
+    ##
+    storageClass: "mysql-sc"
+    accessMode: ReadWriteOnce
+    size: 10Gi
+    
+## Node selector
+## ref: https://kubernetes.io/docs/concepts/configuration/assign-pod-node/#nodeselector
+nodeSelector: {}

@@ -1,0 +1,10 @@
+serviceAccount:
+  ## @param serviceAccount.create Determine whether a Service Account should be created or it should reuse a exiting one.
+  ##
+  create: true
+  ## @param serviceAccount.name ServiceAccount to use. A name is generated using the external-dns.fullname template if it is not set
+  ##
+  name: "external-dns"
+  ## @param serviceAccount.annotations Additional Service Account annotations
+  ##
+  annotations: {eks.amazonaws.com/role-arn: arn:aws:iam::083772204804:role/Mattermost-external-dns}
