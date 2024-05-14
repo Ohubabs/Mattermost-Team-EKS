@@ -15,11 +15,14 @@ You are working at a small enterprise with 50 or less employees. To help develop
 For more information, checkout the mattermost: https://docs.mattermost.com/about/editions-and-offerings.html
 Mattermost website: https://mattermost.com/
 
-## Prerequisites
+## Software Tools needed
 
--	Setup an EC2 instance using the AWS Management Console
--	Install AWS CLI v2
--	Install Terraform
+-	AWS Cli v2
+-	Kubectl Cli
+-	Terraform Cli
+-	AWS EKS Cluster
+-	Kubernetes cluster add-ons External DNS, Certificate Manager, Application LoadBalancer Controller, and Nginx Ingress Controller to securely expose apps within the cluster to the internet with 	custom urls
+-	Monitoring Software
 
 ## Project Instructions
 
