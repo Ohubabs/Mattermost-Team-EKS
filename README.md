@@ -124,7 +124,7 @@ Execute the following commands:
     terraform plan
     terraform apply --auto-approve
 
-### Step 10: Deploy an External DNS pod to handle setting up apps within the Mattermost Cluster with domain names/url for easy access on the internet.
+### Step 10: Deploy the External DNS helm chart to handle setting up apps within the Mattermost Cluster with domain names/url for easy access on the internet.
 
 Enter the exposure/ directory
 Execute the following commands:
