@@ -146,6 +146,17 @@ Execute the following commands:
     terraform plan
     terraform apply --auto-approve
 
+![Screenshot 2024-05-15 at 3 47 31 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/96ea8eee-0fae-4ee5-8e4d-766aa6368d5c)
+![Screenshot 2024-05-15 at 3 51 35 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/6bd97edc-066f-4cc3-9efa-8417a62c8b60)
+![Screenshot 2024-05-15 at 3 53 09 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/d6bfb92a-a6fb-4e63-882e-c560385405cf)
+![Screenshot 2024-05-15 at 3 53 42 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/02677d4b-61e4-497c-84fc-9cdf44a28ab5)
+![Screenshot 2024-05-15 at 3 55 23 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/3dcff2f1-4cca-4561-b079-5784307004ce)
+![image](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/264962eb-4932-46a5-ae40-dc5e98e9a3de)
+![Screenshot 2024-05-15 at 4 05 14 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/0ad34313-356e-43af-b766-dbc28ff5e386)
+![Screenshot 2024-05-15 at 4 05 31 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/ccb99f18-4833-4698-a738-1d0e4e268d81)
+![Screenshot 2024-05-15 at 4 08 52 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/dd1ee9ea-522b-4d95-8a5e-89038d30b95e)
+
+
 ### Step 7: Update Kubeconfig after cluster deployment by executing the aws commad:
 
     aws eks update-kubeconfig --name <name-of-cluster> --region <region-of-cluster-deployment
