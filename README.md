@@ -81,17 +81,13 @@ Mattermost website: https://mattermost.com/
 
 ![Screenshot 2024-05-15 at 2 48 28 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/b79c16b8-2a10-45c4-9aed-260d26d2ceac)
 
-
-
-
-
-
-
-
-
 ### Step 2: Clone this repository
 
     git clone https://github.com/Ohubabs/Mattermost-Team-EKS.git
+
+![Screenshot 2024-05-15 at 3 28 48 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/e38fb179-7b4c-4ea9-a7d3-14af4d4f80fd)
+
+
 
 ### Step 3: Install AWS CLI v2
 
@@ -99,9 +95,17 @@ To install AWS cli v2 and login to AWS account, execute the following commands:
 	
     sh aws.sh 
 
+![Screenshot 2024-05-15 at 3 30 08 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/e80a13bb-f50d-4bc9-b5c5-9741d2823474)
+
+![Screenshot 2024-05-15 at 3 31 09 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/4c73a466-db09-4da4-8c32-4e7533671d39)
+
 After installing AWS cli v2, setup access to your AWS account by executing the bash shell script below then entering the necessary information when prompted:
 	
     aws configure
+
+![Screenshot 2024-05-15 at 3 32 33 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/510d6f8c-ffef-41bd-bb50-ec1ce083f971)
+
+
 
 Enter you AWS Account Access ID, Secret Key, region for deploying your resources, and output type (Recommend: json)
 
@@ -110,6 +114,9 @@ Enter you AWS Account Access ID, Secret Key, region for deploying your resources
 Install Kubectl CLI by executing the bash shell script below:
 
     sh kubectl.sh 
+
+![Screenshot 2024-05-15 at 3 34 05 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/777a0c44-cdcb-48bf-9147-160b0e7bd994)
+
 
 ### Step 5: Install Terraform CLI by executing the bash shell script below
 
