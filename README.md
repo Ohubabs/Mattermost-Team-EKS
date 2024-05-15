@@ -64,6 +64,12 @@ Mattermost website: https://mattermost.com/
 
 ### Step 1: Launch an EC2 instance
 
+-1 Enter a Name for your instance and choose an Instance Type. For my example, I used an Ubuntu 22.04 Instance type. This is primarily because as of 05/15/24 the hashicorp repository needed to install Terraform and Vault had not been updated to Ubuntu
+24.04.
+
+![Screenshot 2024-05-15 at 2 29 28 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/b4d46b56-7e83-4032-9d14-b87eaa005e25)
+
+
 ### Step 2: Clone this repository
 
     git clone https://github.com/Ohubabs/Mattermost-Team-EKS.git
