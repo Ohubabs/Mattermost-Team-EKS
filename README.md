@@ -132,6 +132,10 @@ Confirm installation by executing the kubectl command:
 
     sh terraform.sh
 
+![Screenshot 2024-05-15 at 3 42 59 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/1f1cb16b-e693-4403-823e-5832f293eb33)
+![Screenshot 2024-05-15 at 3 43 06 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/71010547-1ce9-4664-8cf0-e0fac5d59565)
+
+
 ### Step 6 – Deploy Mattermost EKS Cluster and VPC with necessary permissions via IAM Service accounts to configure pods with access to EBS storage, VPC networking, and Application LoadBalancer Network Trafficking to expose deployed applications to the internet. Note:- It will take 10 – 20 mins for your cluster to be deployed.
 
 Enter the eks/ directory
