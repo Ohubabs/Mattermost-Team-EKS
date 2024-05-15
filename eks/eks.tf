@@ -30,30 +30,6 @@ module "eks" {
     }
   }
 
-    # Extend cluster security group rules
-  /*cluster_security_group_additional_rules = {
-    ingress_nodes_ephemeral_ports_tcp = {
-      description                = "Nodes on ephemeral ports"
-      protocol                   = "tcp"
-      from_port                  = 1025
-      to_port                    = 65535
-      type                       = "ingress"
-      source_node_security_group = true
-    }
-    }
-
-    node_security_group_additional_rules = {
-    ingress_self_all = {
-      description = "Node to node all ports/protocols"
-      protocol    = "-1"
-      from_port   = 0
-      to_port     = 0
-      type        = "ingress"
-      self        = true
-    }
-    # Test: https://github.com/terraform-aws-modules/terraform-aws-eks/pull/2319
-  }*/
-
   eks_managed_node_groups = {
     Mattermost = {
       Name = "matter"
@@ -76,24 +52,6 @@ module "eks" {
   }
 
   enable_cluster_creator_admin_permissions = true
-
-  /*access_entries = {
-    # One access entry with a policy associated
-    example = {
-      kubernetes_groups = []
-      principal_arn     = "arn:aws:iam::123456789012:role/something"
-
-      policy_associations = {
-        example = {
-          policy_arn = "arn:aws:eks::aws:cluster-access-policy/AmazonEKSViewPolicy"
-          access_scope = {
-            namespaces = ["default"]
-            type       = "namespace"
-          }
-        }
-      }
-    }
-  }*/
   
   tags = {
     "kubernetes.io/cluster/Mattermost" = "owned"
