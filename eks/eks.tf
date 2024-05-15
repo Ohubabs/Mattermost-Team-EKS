@@ -1,4 +1,3 @@
-#https://antonputra.com/amazon/create-aws-eks-fargate-using-terraform/#deploy-app-to-aws-fargate
 module "eks" {
   source  = "terraform-aws-modules/eks/aws"
   version = "20.8.3"
