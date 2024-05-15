@@ -64,10 +64,29 @@ Mattermost website: https://mattermost.com/
 
 ### Step 1: Launch an EC2 instance
 
--1 Enter a Name for your instance and choose an Instance Type. For my example, I used an Ubuntu 22.04 Instance type. This is primarily because as of 05/15/24 the hashicorp repository needed to install Terraform and Vault had not been updated to Ubuntu
+- 1 Enter a Name for your instance and choose an OS for your instance. For my example, I used an Ubuntu 22.04 Instance type. This is primarily because as of 05/15/24 the hashicorp repository needed to install Terraform and Vault had not been updated to Ubuntu
 24.04.
 
-![Screenshot 2024-05-15 at 2 29 28 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/b4d46b56-7e83-4032-9d14-b87eaa005e25)
+![Screenshot 2024-05-15 at 2 32 58 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/57a77812-716d-44a9-a81e-459d9eddd637)
+
+- 2 Select an Instance Type, Recommended t3.medium, Create a key pair that'll be used to connect to your VM remotely. Select your VPC (Recommended Default VPC).
+
+![Screenshot 2024-05-15 at 2 41 15 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/931fc33b-1058-4ffd-9ead-035d846de72c)
+
+- 3 Configure your EBS storage to be greater than the standard 8GB provided for the t3.medium instance as you will need a lot of space to execute the terraform commands. Afterwards, Launch your instance. Then follow the steps to connect remotely to the instance from your terminal. Substituting in your key pair name and instance public dns/ip.
+
+![Screenshot 2024-05-15 at 2 42 22 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/f4e14bd2-7d4c-485c-b934-70a9040fca44)
+
+![Screenshot 2024-05-15 at 2 45 18 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/fb4b2064-ef2b-4e4c-be9b-f6fb36fc3c75)
+
+![Screenshot 2024-05-15 at 2 48 28 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/b79c16b8-2a10-45c4-9aed-260d26d2ceac)
+
+
+
+
+
+
+
 
 
 ### Step 2: Clone this repository
