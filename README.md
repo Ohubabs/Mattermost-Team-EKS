@@ -99,12 +99,15 @@ To install AWS cli v2 and login to AWS account, execute the following commands:
 
 ![Screenshot 2024-05-15 at 3 31 09 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/4c73a466-db09-4da4-8c32-4e7533671d39)
 
-After installing AWS cli v2, setup access to your AWS account by executing the bash shell script below then entering the necessary information when prompted:
+After installing AWS cli v2, setup access to your AWS account by executing the bash shell script below then entering the necessary information when prompted
 	
     aws configure
 
-![Screenshot 2024-05-15 at 3 32 33 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/510d6f8c-ffef-41bd-bb50-ec1ce083f971)
+Then, run this command to confirm the installation:
 
+    aws --version
+
+![Screenshot 2024-05-15 at 3 32 33 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/510d6f8c-ffef-41bd-bb50-ec1ce083f971)
 
 
 Enter you AWS Account Access ID, Secret Key, region for deploying your resources, and output type (Recommend: json)
@@ -117,10 +120,17 @@ Install Kubectl CLI by executing the bash shell script below:
 
 ![Screenshot 2024-05-15 at 3 34 05 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/777a0c44-cdcb-48bf-9147-160b0e7bd994)
 
+Confirm installation by executing the kubectl command:
+
+    kubectl version
+
+ ![Screenshot 2024-05-15 at 3 34 37 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/6b5196f4-5de3-4da7-ac81-e99c384a183d)
+
+
 
 ### Step 5: Install Terraform CLI by executing the bash shell script below
 
-    sh terraform-vault.sh
+    sh terraform.sh
 
 ### Step 6 – Deploy Mattermost EKS Cluster and VPC with necessary permissions via IAM Service accounts to configure pods with access to EBS storage, VPC networking, and Application LoadBalancer Network Trafficking to expose deployed applications to the internet. Note:- It will take 10 – 20 mins for your cluster to be deployed.
 
