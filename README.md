@@ -155,11 +155,14 @@ Execute the following commands:
 ![Screenshot 2024-05-15 at 4 05 14 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/0ad34313-356e-43af-b766-dbc28ff5e386)
 ![Screenshot 2024-05-15 at 4 05 31 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/ccb99f18-4833-4698-a738-1d0e4e268d81)
 ![Screenshot 2024-05-15 at 4 08 52 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/dd1ee9ea-522b-4d95-8a5e-89038d30b95e)
+![Screenshot 2024-05-15 at 4 11 19 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/16f9b741-d3b8-4288-8d52-7218a5084d18)
 
 
 ### Step 7: Update Kubeconfig after cluster deployment by executing the aws commad:
 
     aws eks update-kubeconfig --name <name-of-cluster> --region <region-of-cluster-deployment
+
+
 
 ### Step 8: Setup Namespaces within Mattermost Cluster.
 
@@ -171,15 +174,32 @@ Execute the following commands:
     terraform plan
     terraform apply --auto-approve
 
+![Screenshot 2024-05-15 at 4 18 52 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/bbce49ba-61f5-44e1-9b03-1610aead5d3b)
+![Screenshot 2024-05-15 at 4 19 11 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/b35e0e36-7fe0-4a4f-aae0-95d98591c3d3)
+![Screenshot 2024-05-15 at 4 19 31 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/faf40e55-ebff-4b86-9ec0-457bfc36c2fb)
+![Screenshot 2024-05-15 at 4 19 36 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/c1e79acd-3a2a-4031-bb87-0098d7ad165b)
+![Screenshot 2024-05-15 at 4 19 48 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/c4c79114-12c6-47ef-b36f-b9363670f752)
+![Screenshot 2024-05-15 at 4 19 56 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/f502212a-6e43-434d-9cd9-f933167cfd39)
+
+
 ### Step 9: Setup Secrets within Mattermost Cluster.
 
 Enter the auth/ directory
+Edit the var.tf file with your aws credentials and the login details you wish to use for Grafana. If you want to change the name of the secret, make sure to change the name in the Grafana values file and in the matt-issuer.yml and observe-issuer.yml
 Execute the following commands:
 
     terraform init
     terraform validate
     terraform plan
     terraform apply --auto-approve
+
+![Screenshot 2024-05-15 at 4 24 42 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/c9586131-d2bf-4cc9-96b6-2a1e4a0f5819)
+![Screenshot 2024-05-15 at 4 25 04 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/3f4057f2-3985-4548-bb59-11886bdff53c)
+![Screenshot 2024-05-15 at 4 25 10 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/f1375320-fb78-4602-8ac7-6194c01f230c)
+![Screenshot 2024-05-15 at 4 25 19 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/c14a5f76-2066-4a0d-916a-66f03039651a)
+![Screenshot 2024-05-15 at 4 25 33 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/73041609-dbd3-4060-84bd-b40c68b76087)
+![Screenshot 2024-05-15 at 4 27 32 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/c0409549-b200-411a-966d-da634a5e92a3)
+
 
 ### Step 10: Deploy the External DNS helm chart to handle setting up apps within the Mattermost Cluster with domain names/website url for easy access on the internet.
 
@@ -191,6 +211,8 @@ Execute the following commands:
     terraform plan
     terraform apply --auto-approve
 
+
+
 ### Step 11: Deploy the Certificate Manager Helm Chart to handle the issuing of Lets Encrypt certificates to secure apps within the Mattermost Cluster exposed to the internet as websites.
 
 Enter the encryption/ directory
@@ -201,6 +223,8 @@ Execute the following commands:
     terraform plan
     terraform apply --auto-approve
 
+![Screenshot 2024-05-15 at 4 39 44 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/63ef0069-cc40-412b-8ad4-8ffb88209a5a)
+![Screenshot 2024-05-15 at 4 40 32 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/be2291eb-5383-48f6-a036-2a5b6b01c772)
 
 ### Step 12: Deploy the Application LoadBalancer Helm Chart to enable the provisioning of Application LoadBalancers on AWS for handling the web traffic going in and coming out to applications running in pods within the Mattermost Cluster:
 
