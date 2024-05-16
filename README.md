@@ -85,7 +85,7 @@ Mattermost website: https://mattermost.com/
 
 - 3 Configure your EBS storage to be greater than the standard 8GB provided for the t3.medium instance as you will need a lot of space to execute the terraform commands. Afterwards, Launch your instance. Then follow the steps to connect remotely to the instance from your terminal. Substituting in your key pair name and instance public dns/ip.
 
-![Screenshot 2024-05-15 at 2 42 22 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/f4e14bd2-7d4c-485c-b934-70a9040fca44)
+![Screenshot 2024-05-15 at 2 42 22 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/d5900267-fc29-4ce1-a2d4-a32b7e734f91)
 
 ![Screenshot 2024-05-15 at 2 45 18 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/fb4b2064-ef2b-4e4c-be9b-f6fb36fc3c75)
 
