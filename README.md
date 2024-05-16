@@ -218,7 +218,7 @@ Execute the following commands:
 
 
 
-### Step 11: Deploy the Certificate Manager Helm Chart to handle the issuing of Lets Encrypt certificates to secure apps within the Mattermost Cluster exposed to the internet as websites. Note you need to have your own Domain Name setup in Route53 on AWS. Once you have setup your domain, replace  ".devopsnetwork.net" with your own website url.
+### Step 11: Deploy the Certificate Manager Helm Chart to handle the issuing of Lets Encrypt certificates to secure apps within the Mattermost Cluster exposed to the internet as websites. Note you need to have your own Domain Name setup in Route53 on AWS. Once you have setup your domain, replace  ".devopsnetwork.net" with your own website url. Note:- You can install the helm chart without the service account entry. Only use it if you used the cert-manager module create the IAM IRSA service account role svc.tf file of the eks/ directory
 
 
 Enter the encryption/ directory
