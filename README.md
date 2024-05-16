@@ -172,7 +172,7 @@ Execute the following commands:
 
 ### Step 7: Update Kubeconfig after cluster deployment by executing the aws commad:
 
-    aws eks update-kubeconfig --name <name-of-cluster> --region <region-of-cluster-deployment
+    aws eks update-kubeconfig --name <name-of-cluster> --region <region-of-cluster-deployment>
 
 
 
