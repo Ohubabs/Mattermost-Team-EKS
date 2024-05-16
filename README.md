@@ -155,6 +155,7 @@ Execute the following commands:
 ![Screenshot 2024-05-15 at 4 05 14 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/0ad34313-356e-43af-b766-dbc28ff5e386)
 ![Screenshot 2024-05-15 at 4 05 31 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/ccb99f18-4833-4698-a738-1d0e4e268d81)
 ![Screenshot 2024-05-15 at 4 08 52 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/dd1ee9ea-522b-4d95-8a5e-89038d30b95e)
+![Screenshot 2024-05-15 at 5 19 59 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/7ed98ec5-758f-4877-a957-5ec97b97694d)
 ![Screenshot 2024-05-15 at 4 11 19 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/16f9b741-d3b8-4288-8d52-7218a5084d18)
 
 
@@ -201,8 +202,7 @@ Execute the following commands:
 ![Screenshot 2024-05-15 at 4 27 32 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/c0409549-b200-411a-966d-da634a5e92a3)
 
 
-### Step 10: Deploy the External DNS helm chart to handle setting up apps within the Mattermost Cluster with domain names/website url for easy access on the internet.
-
+### Step 10: Deploy the External DNS helm chart to handle setting up apps within the Mattermost Cluster with domain names/website url for easy access on the internet. 
 Enter the exposure/ directory
 Execute the following commands:
 
@@ -211,9 +211,14 @@ Execute the following commands:
     terraform plan
     terraform apply --auto-approve
 
+![Screenshot 2024-05-15 at 4 53 02 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/9ad80f3f-0249-48f5-b391-40b2deef226c)
+![Screenshot 2024-05-15 at 4 53 41 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/10c2552c-d36a-46d5-a93c-a81903bb36b7)
+![Screenshot 2024-05-15 at 4 54 32 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/669f0525-9738-47fd-89bc-56d40d718772)
+![Screenshot 2024-05-15 at 4 56 12 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/572ddd8d-2462-4c58-8630-540e09235b86)
 
 
-### Step 11: Deploy the Certificate Manager Helm Chart to handle the issuing of Lets Encrypt certificates to secure apps within the Mattermost Cluster exposed to the internet as websites.
+### Step 11: Deploy the Certificate Manager Helm Chart to handle the issuing of Lets Encrypt certificates to secure apps within the Mattermost Cluster exposed to the internet as websites. Note you need to have your own Domain Name setup in Route53 on AWS. Once you have setup your domain, replace  ".devopsnetwork.net" with your own website url.
+
 
 Enter the encryption/ directory
 Execute the following commands:
@@ -225,6 +230,17 @@ Execute the following commands:
 
 ![Screenshot 2024-05-15 at 4 39 44 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/63ef0069-cc40-412b-8ad4-8ffb88209a5a)
 ![Screenshot 2024-05-15 at 4 40 32 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/be2291eb-5383-48f6-a036-2a5b6b01c772)
+![Screenshot 2024-05-15 at 4 43 55 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/955a2ad8-f468-4aec-a319-a326150ac85a)
+![Screenshot 2024-05-15 at 4 43 58 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/267811d3-55cd-42ce-99ac-6ff3eb738ea7)
+
+Then run these kubectl commands to create two clusterissuers to encrypt web traffic flowing through the loadbalancers created in step 16.
+
+    kubectl apply -f matter-issuer.yml
+    kubectl apply -f observe-issuer.yml
+
+![Screenshot 2024-05-15 at 5 05 47 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/59cc50d1-7512-4d1e-851a-84b5c95347ba)
+![Screenshot 2024-05-15 at 5 06 47 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/cab6425b-68e1-4307-a3a3-52b1665b22ad)
+
 
 ### Step 12: Deploy the Application LoadBalancer Helm Chart to enable the provisioning of Application LoadBalancers on AWS for handling the web traffic going in and coming out to applications running in pods within the Mattermost Cluster:
 
@@ -236,6 +252,13 @@ Execute the following commands:
     terraform plan
     terraform apply --auto-approve
 
+![Screenshot 2024-05-15 at 5 13 59 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/bcf665e6-1677-4044-9a7d-c5b58caf3c92)
+![Screenshot 2024-05-15 at 5 13 59 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/92c1a4e1-5daf-49a2-970a-620b91f6367a)
+![Screenshot 2024-05-15 at 5 15 07 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/1b548737-85c4-4685-96ef-eca5494b21aa)
+![Screenshot 2024-05-15 at 5 15 24 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/4aaac444-5188-4cae-8693-995d025333f8)
+![Screenshot 2024-05-15 at 5 09 34 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/97c70d36-abd8-402a-8278-2ca3a425edb7)
+![Screenshot 2024-05-15 at 5 15 58 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/28bd378f-2ca6-47af-9a9f-6f3910f3b38d)
+
 ### Step 13: Deploy the Nginx-Ingress Helm Chart to handle the traffic in and out to applications running in pods within the Mattermost Cluster:
 
 Enter the nginx-ingress/ directory
@@ -246,9 +269,32 @@ Execute the following commands:
     terraform plan
     terraform apply --auto-approve
 
+![Screenshot 2024-05-15 at 5 22 42 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/07963c7c-3f52-476b-86ea-af93d615f3a5)
+![Screenshot 2024-05-15 at 5 26 48 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/d0edfa9b-144b-4f04-85f2-ae957683b93a)
+![Screenshot 2024-05-15 at 5 28 09 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/67004bd8-078f-4749-b59a-38c6a154e6e8)
+![Screenshot 2024-05-15 at 5 28 49 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/82372bf8-febf-4eb3-b789-4523fcbee4f2)
+
+
+
 ### Step 14: Deploy the Mattermost Helm Chart with embedded MYSQL database:
 
 Enter the mattermost/ directory
+Edit the mattermost-values.yml file by entering the credentials for the embedded mysql database and the storageclass names for Mattermost & MYSQL so their pods can be dynamically provisioned EBS storage.
+Execute the following commands:
+
+    terraform init
+    terraform validate
+    terraform plan
+    terraform apply --auto-approve
+
+![Screenshot 2024-05-15 at 5 36 18 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/694d7a1f-929b-46fc-afb0-ca46e3570959)
+![Screenshot 2024-05-15 at 5 36 44 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/66ecebb7-3396-4afc-b89d-b2c270140bf4)
+![Screenshot 2024-05-15 at 5 37 11 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/11292bf7-2d73-4836-b636-e86926af57f0)
+![Screenshot 2024-05-15 at 5 48 09 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/bf4f6a4a-3e00-4208-b112-41b1a667c376)
+
+### Step 15: Deploy the Prometheus and Grafana Helm Charts to perform real time monitoring of all cluster resources:
+
+Enter the observability/ directory
 Execute the following commands:
 
     terraform init
@@ -257,9 +303,10 @@ Execute the following commands:
     terraform apply --auto-approve
 
 
-### Step 15: Deploy the Prometheus and Grafana Helm Charts to perform real time monitoring of all cluster resources:
 
-Enter the observability/ directory
+### Step 16: Deploy the Nginx Ingresses for Mattermost, Prometheus & Grafana to expose those apps to the internet to at matter.devopsnetwork.net, matter-monitor.devopsnetwork.net, matter-dashboard.devopsnetwork.net.:
+
+Enter the ingress/ directory
 Execute the following commands:
 
     terraform init
