@@ -302,6 +302,12 @@ Execute the following commands:
     terraform plan
     terraform apply --auto-approve
 
+![Screenshot 2024-05-15 at 5 49 59 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/97ab9ff8-6f94-4d6e-ad5b-b69c9e0dbbeb)
+![Screenshot 2024-05-15 at 5 50 17 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/aa628fd7-dfa9-4f9d-813d-8713792b44b9)
+![Screenshot 2024-05-15 at 5 51 43 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/e887898b-dd70-4baa-b159-5eea1ace25d9)
+![Screenshot 2024-05-15 at 5 54 00 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/f13ed271-4386-4087-8334-be6d59386045)
+![Screenshot 2024-05-15 at 5 59 25 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/b96530e0-7372-44bb-be30-be24f08d7709)
+
 
 
 ### Step 16: Deploy the Nginx Ingresses for Mattermost, Prometheus & Grafana to expose those apps to the internet to at matter.devopsnetwork.net, matter-monitor.devopsnetwork.net, matter-dashboard.devopsnetwork.net.:
@@ -313,4 +319,10 @@ Execute the following commands:
     terraform validate
     terraform plan
     terraform apply --auto-approve
+
+![Screenshot 2024-05-15 at 6 07 31 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/c388a39c-baa1-4f94-8653-d185893ef2bb)
+![Screenshot 2024-05-15 at 6 03 29 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/a11ed7dc-8fe2-4d87-9675-20e8d86a7a8b)
+![Screenshot 2024-05-15 at 6 03 46 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/166a805c-3a35-4f2c-b033-f6350abb2e06)
+![Screenshot 2024-05-15 at 6 04 54 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/6f14fc45-8ece-4bed-9cc1-7a81647b825f)
+
 ![image](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/1923fac3-3f3c-4183-8baf-dac3fee0b5b3)
