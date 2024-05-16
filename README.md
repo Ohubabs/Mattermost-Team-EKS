@@ -107,18 +107,17 @@ To install AWS cli v2 and login to AWS account, execute the following commands:
 
 ![Screenshot 2024-05-15 at 3 30 08 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/e80a13bb-f50d-4bc9-b5c5-9741d2823474)
 
-![Screenshot 2024-05-15 at 3 31 09 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/4c73a466-db09-4da4-8c32-4e7533671d39)
-
 After installing AWS cli v2, setup access to your AWS account by executing the bash shell script below then entering the necessary information when prompted
 	
     aws configure
+
+![Screenshot 2024-05-15 at 3 32 33 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/510d6f8c-ffef-41bd-bb50-ec1ce083f971)
 
 Then, run this command to confirm the installation:
 
     aws --version
 
-![Screenshot 2024-05-15 at 3 32 33 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/510d6f8c-ffef-41bd-bb50-ec1ce083f971)
-
+![Screenshot 2024-05-15 at 3 31 09 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/4c73a466-db09-4da4-8c32-4e7533671d39)
 
 Enter you AWS Account Access ID, Secret Key, region for deploying your resources, and output type (Recommend: json)
 
