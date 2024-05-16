@@ -1196,7 +1196,7 @@ alertmanager:
 
   persistence:
     size: 2Gi
-    storageClass: prom-sc2
+    storageClass: alert-sc
 
   podSecurityContext:
     runAsUser: 65534
