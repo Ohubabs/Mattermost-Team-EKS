@@ -113,13 +113,14 @@ After installing AWS cli v2, setup access to your AWS account by executing the b
 
 ![Screenshot 2024-05-15 at 3 32 33 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/510d6f8c-ffef-41bd-bb50-ec1ce083f971)
 
-Then, run this command to confirm the installation:
+Enter you AWS Account Access ID, Secret Key, region for deploying your resources, and output type (Recommend: json)
+
+To confirm the installation, run:
 
     aws --version
 
 ![Screenshot 2024-05-15 at 3 31 09 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/4c73a466-db09-4da4-8c32-4e7533671d39)
 
-Enter you AWS Account Access ID, Secret Key, region for deploying your resources, and output type (Recommend: json)
 
 ### Step 4: Install Kubectl CLI
 
