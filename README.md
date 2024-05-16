@@ -374,16 +374,16 @@ Delete resources by performing running the command below in each directory follo
 
     terraform destroy --auto-approve
 
-ingress
-Prometheus and Grafana
-Mattermost
-Nginx-Ingress
-ALB
-encryption
-expose
-auth
-namespace
-eks cluster
+- ingress/
+- observability/
+- mattermost/
+- nginx-Ingress/
+- alb/
+- encryption/
+- expose/
+- auth/
+- namespace/
+- eks/
 
 
 
