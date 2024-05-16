@@ -353,6 +353,8 @@ Execute the following commands:
 ![Screenshot 2024-05-15 at 7 25 39 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/98d28148-5ed2-46fe-a0d7-343cd113820b)
 ![Screenshot 2024-05-15 at 7 28 44 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/6461797e-be76-48c2-8c5d-bd00d949bf10)
 ![Screenshot 2024-05-15 at 7 34 22 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/9104493a-c8aa-4928-a572-5db70bf578a6)
+![Screenshot 2024-05-15 at 7 38 35 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/ec2c4773-9f51-4b14-9dbe-b97fe60c4f79)
+
 
 
 
