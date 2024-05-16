@@ -214,7 +214,8 @@ Execute the following commands:
 ![Screenshot 2024-05-15 at 4 53 02 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/9ad80f3f-0249-48f5-b391-40b2deef226c)
 ![Screenshot 2024-05-15 at 4 53 41 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/10c2552c-d36a-46d5-a93c-a81903bb36b7)
 ![Screenshot 2024-05-15 at 4 54 32 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/669f0525-9738-47fd-89bc-56d40d718772)
-![Screenshot 2024-05-15 at 4 56 12 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/572ddd8d-2462-4c58-8630-540e09235b86)
+![Screenshot 2024-05-15 at 4 56 12 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/c338dcc8-cd20-484b-b176-f86722b2d0b4)
+
 
 
 ### Step 11: Deploy the Certificate Manager Helm Chart to handle the issuing of Lets Encrypt certificates to secure apps within the Mattermost Cluster exposed to the internet as websites. Note you need to have your own Domain Name setup in Route53 on AWS. Once you have setup your domain, replace  ".devopsnetwork.net" with your own website url.
