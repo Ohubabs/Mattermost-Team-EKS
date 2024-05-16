@@ -137,7 +137,7 @@ variable "max_unavailable" {
 variable "key_name" {
   type        = string
   description = "ssh key name for Nodegroups"
-  default     = "pipeline"
+  default     = ""
 }
 
 
