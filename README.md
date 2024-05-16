@@ -139,6 +139,7 @@ Confirm installation by executing the kubectl command:
 ### Step 6 – Deploy Mattermost EKS Cluster and VPC with necessary permissions via IAM Service accounts to configure pods with access to EBS storage, VPC networking, and Application LoadBalancer Network Trafficking to expose deployed applications to the internet. Note:- It will take 10 – 20 mins for your cluster to be deployed.
 
 Enter the eks/ directory
+Edit var.tf by entering a custom key pair you've created in AWS to setup remote ssh access to your nodes.
 Execute the following commands:
 	
     terraform init
