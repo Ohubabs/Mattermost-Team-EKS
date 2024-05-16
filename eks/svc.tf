@@ -41,7 +41,7 @@ module "external_dns_role" {
 
   role_name                     = "Mattermost-external-dns"
   attach_external_dns_policy    = true
-  external_dns_hosted_zone_arns = ["arn:aws:route53:::hostedzone/Z00777903RWLGIFSJQB59"] #Z00777903RWLGIFSJQB59 change to hosted zone id
+  external_dns_hosted_zone_arns = ["arn:aws:route53:::hostedzone/<hosted-zone-id>"] 
 
   oidc_providers = {
     ex = {
