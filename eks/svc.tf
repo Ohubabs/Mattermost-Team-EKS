@@ -79,7 +79,7 @@ module "alb_role" {
 module "cert_manager_role" {
   source = "terraform-aws-modules/iam/aws//modules/iam-role-for-service-accounts-eks"
 
-  role_name                     = "DB-cert-manager"
+  role_name                     = "Mattermost-cert-manager"
   attach_cert_manager_policy    = true
   cert_manager_hosted_zone_arns = ["arn:aws:route53:::hostedzone/<hosted-zone-id>"]
 
@@ -91,6 +91,6 @@ module "cert_manager_role" {
   }
 
   tags = {
-    name = "kubernetes.io/cluster/DB"
+    name = "kubernetes.io/cluster/Mattermost"
   }
 }
