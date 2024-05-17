@@ -81,7 +81,8 @@ Mattermost website: https://mattermost.com/
 
 - 2 Select an Instance Type, Recommended t3.medium, Create a key pair that'll be used to connect to your EC2 instance remotely. Select your VPC and security group (Recommend using the Defaults but ensure port 22 is open in the security group or you won't be able to connect to the VM).
 
-![Screenshot 2024-05-15 at 2 41 15 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/931fc33b-1058-4ffd-9ead-035d846de72c)
+![Screenshot 2024-05-15 at 2 41 15 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/cc181e0c-a1d7-41bf-b7cf-410389262388)
+
 
 - 3 Configure your EBS storage to be greater than the standard 8GB provided for the t3.medium instance as you will need a lot of space to execute the terraform commands. Afterwards, Launch your instance. Then follow the steps to connect remotely to the instance from your terminal. Substituting in your key pair name and instance public dns/ip.
 
