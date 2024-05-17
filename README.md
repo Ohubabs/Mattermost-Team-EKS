@@ -56,13 +56,13 @@ Mattermost website: https://mattermost.com/
 
 15 – Deploy Observability Software Prometheus and Grafana for real time monitoring of cluster resources i.e. pods, nodes, nginx ingress controller, etc…
 
-16 - Deploy the Nginx Ingresses for the Mattermost, Prometheus, & Grafana web apps to expose those apps to the internet.
+16 - Deploy the Nginx Ingresses for the Mattermost, Prometheus, & Grafana web apps to expose them to the internet.
 
 17 - Confirm launch of encrypted mattermost website, setup login details and create an organization name 
 
 18 - Confirm launch of prometheus website and monitoring of cluster resources.
 
-19 - Confirm launch of grafana website, sync it with Prometheus as a datasource and enter a query to visualize prometheus monitoring data of the Mattermost Cluster and its resources.
+19 - Confirm launch of grafana website, sync it with Prometheus as a datasource and enter a query to visualize prometheus monitoring data of the Mattermost Cluster and its resources with better stunning dashboards.
 
 20 - Clean up resources.
 
