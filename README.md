@@ -269,10 +269,10 @@ Execute the following commands:
     terraform plan
 
 ![Screenshot 2024-05-15 at 4 40 32 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/be2291eb-5383-48f6-a036-2a5b6b01c772)
+
+    terraform apply --auto-approve
     
 ![Screenshot 2024-05-15 at 4 43 55 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/955a2ad8-f468-4aec-a319-a326150ac85a)
-    
-    terraform apply --auto-approve
     
 ![Screenshot 2024-05-15 at 4 43 58 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/267811d3-55cd-42ce-99ac-6ff3eb738ea7)
 
