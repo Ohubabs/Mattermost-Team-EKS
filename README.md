@@ -298,16 +298,14 @@ Execute the following commands:
 ![Screenshot 2024-05-15 at 5 13 59 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/bcf665e6-1677-4044-9a7d-c5b58caf3c92)
     
     terraform validate
-
-![Screenshot 2024-05-15 at 5 13 59 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/92c1a4e1-5daf-49a2-970a-620b91f6367a)
     
     terraform plan
 
 ![Screenshot 2024-05-15 at 5 15 07 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/1b548737-85c4-4685-96ef-eca5494b21aa)
 
-![Screenshot 2024-05-15 at 5 15 24 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/4aaac444-5188-4cae-8693-995d025333f8)
-    
     terraform apply --auto-approve
+
+![Screenshot 2024-05-15 at 5 15 24 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/4aaac444-5188-4cae-8693-995d025333f8)  
 
 ![Screenshot 2024-05-15 at 5 09 34 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/97c70d36-abd8-402a-8278-2ca3a425edb7)
 
