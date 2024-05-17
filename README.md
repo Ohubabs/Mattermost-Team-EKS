@@ -188,14 +188,21 @@ Enter the namespace/ directory
 Execute the following commands:
 
     terraform init
-    terraform validate
-    terraform plan
-    terraform apply --auto-approve
 
 ![Screenshot 2024-05-15 at 4 18 52 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/bbce49ba-61f5-44e1-9b03-1610aead5d3b)
+    
+    terraform validate
+
 ![Screenshot 2024-05-15 at 4 19 31 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/faf40e55-ebff-4b86-9ec0-457bfc36c2fb)
+    
+    terraform plan
+
 ![Screenshot 2024-05-15 at 4 19 36 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/527a7e09-1e15-4e1c-85ac-58eabaef1f1e)
+
 ![Screenshot 2024-05-15 at 4 19 48 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/c4c79114-12c6-47ef-b36f-b9363670f752)
+    
+    terraform apply --auto-approve
+
 ![Screenshot 2024-05-15 at 4 19 56 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/f502212a-6e43-434d-9cd9-f933167cfd39)
 
 
