@@ -383,45 +383,70 @@ Enter the ingress/ directory
 Execute the following commands:
 
     terraform init
-    terraform validate
-    terraform plan
-    terraform apply --auto-approve
 
 ![Screenshot 2024-05-15 at 6 07 31 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/c388a39c-baa1-4f94-8653-d185893ef2bb)
+
+    terraform validate
+    
+    terraform plan
+
 ![Screenshot 2024-05-15 at 6 03 29 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/a11ed7dc-8fe2-4d87-9675-20e8d86a7a8b)
+    
+    terraform apply --auto-approve
+
 ![Screenshot 2024-05-15 at 6 03 46 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/166a805c-3a35-4f2c-b033-f6350abb2e06)
+
 ![Screenshot 2024-05-15 at 6 04 54 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/6f14fc45-8ece-4bed-9cc1-7a81647b825f)
 
 ### Step 17: Confirm launch of encrypted mattermost website, setup login details and create an organization name
 
 ![Screenshot 2024-05-15 at 6 46 45 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/b5310e94-1961-4fa1-babf-895a0b6940bc)
+
 ![Screenshot 2024-05-15 at 6 49 28 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/c727a7ff-e296-4e00-b7d6-f8bf177ea7d8)
+
 ![Screenshot 2024-05-15 at 6 49 49 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/7d814431-55fc-4024-bf25-280d06449c13)
+
 ![Screenshot 2024-05-15 at 6 50 51 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/795dc242-7a6d-4cd5-a2d5-1f1a9e48e2a9)
 
 ### Step 18: Confirm launch of prometheus website and monitoring of cluster resources.
 
 ![Screenshot 2024-05-15 at 6 46 56 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/35c80baa-5989-4c22-b30d-6a2c28a79279)
+
 ![Screenshot 2024-05-15 at 7 01 54 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/0e258048-5be5-4b79-b587-da6e111a0bde)
+
 ![Screenshot 2024-05-15 at 7 01 32 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/b2c9cf49-5aab-49d9-91fa-9c4c06d127f6)
 
 
 ### Step 19: Confirm launch of grafana website, sync it with Prometheus as a datasource and enter a query to visualize prometheus monitoring data of the Mattermost Cluster and its resources.
 
 ![Screenshot 2024-05-15 at 6 47 03 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/6fec0e23-ab51-45f0-a48f-eefd716f40fd)
+
 ![Screenshot 2024-05-15 at 7 06 05 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/d1990468-8252-4eec-a1d3-bb2f50a53c87)
+
 ![Screenshot 2024-05-15 at 7 06 13 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/0560b88d-77bd-40c3-b3f1-ffac20dc38c4)
+
 ![Screenshot 2024-05-15 at 7 06 23 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/0531f4b9-62a1-446f-834f-f4a8e6542a09)
+
 ![Screenshot 2024-05-15 at 7 06 29 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/de04c3e8-5a69-4a31-80b5-2ba5618e09f0)
+
 ![Screenshot 2024-05-15 at 7 06 40 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/e5cbe778-7d05-45cb-ba35-c801931a7c14)
+
 ![Screenshot 2024-05-15 at 7 06 43 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/476ec7ad-d551-4b05-b8c8-e346c87f28b2)
+
 ![Screenshot 2024-05-15 at 7 10 30 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/2ab40cc6-f1b1-467c-8cda-95b3975dc916)
+
 ![Screenshot 2024-05-15 at 7 11 21 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/b96ad9ae-7b0a-4004-a053-23ab5c1c982b)
+
 ![Screenshot 2024-05-15 at 7 16 24 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/3fdadc70-0fb8-4b75-bf8c-adf7fd2bbf43)
+
 ![Screenshot 2024-05-15 at 7 25 12 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/57dec34f-0b02-45db-8c0b-4b417c072974)
+
 ![Screenshot 2024-05-15 at 7 25 39 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/98d28148-5ed2-46fe-a0d7-343cd113820b)
+
 ![Screenshot 2024-05-15 at 7 28 44 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/6461797e-be76-48c2-8c5d-bd00d949bf10)
+
 ![Screenshot 2024-05-15 at 7 34 22 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/9104493a-c8aa-4928-a572-5db70bf578a6)
+
 ![Screenshot 2024-05-15 at 7 38 35 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/ec2c4773-9f51-4b14-9dbe-b97fe60c4f79)
 
 ### Step 20: Clean up resources.
