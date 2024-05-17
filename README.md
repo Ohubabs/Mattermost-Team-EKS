@@ -307,8 +307,6 @@ Execute the following commands:
 
 ![Screenshot 2024-05-15 at 5 15 24 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/4aaac444-5188-4cae-8693-995d025333f8)  
 
-![Screenshot 2024-05-15 at 5 09 34 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/97c70d36-abd8-402a-8278-2ca3a425edb7)
-
 ![Screenshot 2024-05-15 at 5 15 58 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/28bd378f-2ca6-47af-9a9f-6f3910f3b38d)
 
 ### Step 13: Deploy the Nginx-Ingress Helm Chart to handle the traffic in and out to applications running in pods within the Mattermost Cluster:
