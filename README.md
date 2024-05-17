@@ -266,11 +266,10 @@ Execute the following commands:
 ![Screenshot 2024-05-15 at 4 39 44 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/63ef0069-cc40-412b-8ad4-8ffb88209a5a)
     
     terraform validate
+    terraform plan
 
 ![Screenshot 2024-05-15 at 4 40 32 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/be2291eb-5383-48f6-a036-2a5b6b01c772)
     
-    terraform plan
-
 ![Screenshot 2024-05-15 at 4 43 55 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/955a2ad8-f468-4aec-a319-a326150ac85a)
     
     terraform apply --auto-approve
@@ -280,11 +279,11 @@ Execute the following commands:
 Then run these kubectl commands to create two clusterissuers to encrypt web traffic flowing through the loadbalancers created in step 16.
 
     kubectl apply -f matter-issuer.yml
+
+    kubectl apply -f observe-issuer.yml
    
 
 ![Screenshot 2024-05-15 at 5 05 47 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/59cc50d1-7512-4d1e-851a-84b5c95347ba)
-
-    kubectl apply -f observe-issuer.yml
 
 ![Screenshot 2024-05-15 at 5 06 47 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/cab6425b-68e1-4307-a3a3-52b1665b22ad)
       
