@@ -419,7 +419,7 @@ Execute the following commands:
 ![Screenshot 2024-05-15 at 7 01 32 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/b2c9cf49-5aab-49d9-91fa-9c4c06d127f6)
 
 
-### Step 19: Confirm launch of grafana website, sync it with Prometheus as a datasource and enter some queries to visualize prometheus monitoring data of the Mattermost Cluster and its resources.
+### Step 19: Confirm launch of grafana website, sync it with Prometheus as a datasource and enter some queries to visualize better the Prometheus monitoring data of the Mattermost Cluster and its resources.
 
 ![Screenshot 2024-05-15 at 6 47 03 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/6fec0e23-ab51-45f0-a48f-eefd716f40fd)
 
