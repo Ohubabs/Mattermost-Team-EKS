@@ -363,10 +363,12 @@ Execute the following commands:
 ![Screenshot 2024-05-15 at 5 49 59 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/97ab9ff8-6f94-4d6e-ad5b-b69c9e0dbbeb)
     
     terraform validate
+    
+    terraform plan
 
 ![Screenshot 2024-05-15 at 5 50 17 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/aa628fd7-dfa9-4f9d-813d-8713792b44b9)
     
-    terraform plan
+   
     terraform apply --auto-approve
 
 
