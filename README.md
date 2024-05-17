@@ -326,9 +326,9 @@ Execute the following commands:
 
 ![Screenshot 2024-05-15 at 5 26 48 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/d0edfa9b-144b-4f04-85f2-ae957683b93a)
 
-![Screenshot 2024-05-15 at 5 28 09 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/67004bd8-078f-4749-b59a-38c6a154e6e8)
-    
     terraform apply --auto-approve
+    
+![Screenshot 2024-05-15 at 5 28 09 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/67004bd8-078f-4749-b59a-38c6a154e6e8)
 
 ![Screenshot 2024-05-15 at 5 28 49 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/82372bf8-febf-4eb3-b789-4523fcbee4f2)
 
