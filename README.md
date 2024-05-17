@@ -79,7 +79,7 @@ Mattermost website: https://mattermost.com/
 
 ![Screenshot 2024-05-15 at 2 32 58 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/57a77812-716d-44a9-a81e-459d9eddd637)
 
-- 2 Select an Instance Type, Recommended t3.medium, Create a key pair that'll be used to connect to your VM remotely. Select your VPC and security group (Recommend using the Defaults but ensure port 22 is open in the security group or you won't be able to connect to the VM).
+- 2 Select an Instance Type, Recommended t3.medium, Create a key pair that'll be used to connect to your EC2 instance remotely. Select your VPC and security group (Recommend using the Defaults but ensure port 22 is open in the security group or you won't be able to connect to the VM).
 
 ![Screenshot 2024-05-15 at 2 41 15 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/931fc33b-1058-4ffd-9ead-035d846de72c)
 
