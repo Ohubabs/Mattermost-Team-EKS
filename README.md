@@ -213,15 +213,23 @@ Edit the var.tf file with your aws credentials and the login details you wish to
 Execute the following commands:
 
     terraform init
-    terraform validate
-    terraform plan
-    terraform apply --auto-approve
 
 ![Screenshot 2024-05-15 at 4 24 42 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/c9586131-d2bf-4cc9-96b6-2a1e4a0f5819)
+    
+    terraform validate
+
 ![Screenshot 2024-05-15 at 4 25 04 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/3f4057f2-3985-4548-bb59-11886bdff53c)
+    
+    terraform plan
+
 ![Screenshot 2024-05-15 at 4 25 10 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/f1375320-fb78-4602-8ac7-6194c01f230c)
+
 ![Screenshot 2024-05-15 at 4 25 19 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/c14a5f76-2066-4a0d-916a-66f03039651a)
+    
+    terraform apply --auto-approve
+
 ![Screenshot 2024-05-15 at 4 25 33 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/73041609-dbd3-4060-84bd-b40c68b76087)
+
 ![Screenshot 2024-05-15 at 4 27 32 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/c0409549-b200-411a-966d-da634a5e92a3)
 
 
@@ -230,13 +238,19 @@ Enter the exposure/ directory
 Execute the following commands:
 
     terraform init
-    terraform validate
-    terraform plan
-    terraform apply --auto-approve
 
 ![Screenshot 2024-05-15 at 4 53 02 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/9ad80f3f-0249-48f5-b391-40b2deef226c)
+    
+    terraform validate
+
 ![Screenshot 2024-05-15 at 4 53 41 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/10c2552c-d36a-46d5-a93c-a81903bb36b7)
+    
+    terraform plan
+
 ![Screenshot 2024-05-15 at 4 54 32 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/669f0525-9738-47fd-89bc-56d40d718772)
+    
+    terraform apply --auto-approve
+
 ![Screenshot 2024-05-15 at 4 56 12 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/c338dcc8-cd20-484b-b176-f86722b2d0b4)
 
 
@@ -248,23 +262,32 @@ Enter the encryption/ directory
 Execute the following commands:
 
     terraform init
-    terraform validate
-    terraform plan
-    terraform apply --auto-approve
 
 ![Screenshot 2024-05-15 at 4 39 44 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/63ef0069-cc40-412b-8ad4-8ffb88209a5a)
+    
+    terraform validate
+
 ![Screenshot 2024-05-15 at 4 40 32 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/be2291eb-5383-48f6-a036-2a5b6b01c772)
+    
+    terraform plan
+
 ![Screenshot 2024-05-15 at 4 43 55 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/955a2ad8-f468-4aec-a319-a326150ac85a)
+    
+    terraform apply --auto-approve
+    
 ![Screenshot 2024-05-15 at 4 43 58 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/267811d3-55cd-42ce-99ac-6ff3eb738ea7)
 
 Then run these kubectl commands to create two clusterissuers to encrypt web traffic flowing through the loadbalancers created in step 16.
 
     kubectl apply -f matter-issuer.yml
-    kubectl apply -f observe-issuer.yml
+   
 
 ![Screenshot 2024-05-15 at 5 05 47 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/59cc50d1-7512-4d1e-851a-84b5c95347ba)
-![Screenshot 2024-05-15 at 5 06 47 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/cab6425b-68e1-4307-a3a3-52b1665b22ad)
 
+    kubectl apply -f observe-issuer.yml
+
+![Screenshot 2024-05-15 at 5 06 47 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/cab6425b-68e1-4307-a3a3-52b1665b22ad)
+      
 
 ### Step 12: Deploy the Application LoadBalancer Helm Chart to enable the provisioning of Application LoadBalancers on AWS for handling the web traffic going in and coming out to applications running in pods within the Mattermost Cluster:
 
@@ -272,15 +295,23 @@ Enter the alb/ directory
 Execute the following commands:
 
     terraform init
-    terraform validate
-    terraform plan
-    terraform apply --auto-approve
 
 ![Screenshot 2024-05-15 at 5 13 59 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/bcf665e6-1677-4044-9a7d-c5b58caf3c92)
+    
+    terraform validate
+
 ![Screenshot 2024-05-15 at 5 13 59 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/92c1a4e1-5daf-49a2-970a-620b91f6367a)
+    
+    terraform plan
+
 ![Screenshot 2024-05-15 at 5 15 07 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/1b548737-85c4-4685-96ef-eca5494b21aa)
+
 ![Screenshot 2024-05-15 at 5 15 24 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/4aaac444-5188-4cae-8693-995d025333f8)
+    
+    terraform apply --auto-approve
+
 ![Screenshot 2024-05-15 at 5 09 34 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/97c70d36-abd8-402a-8278-2ca3a425edb7)
+
 ![Screenshot 2024-05-15 at 5 15 58 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/28bd378f-2ca6-47af-9a9f-6f3910f3b38d)
 
 ### Step 13: Deploy the Nginx-Ingress Helm Chart to handle the traffic in and out to applications running in pods within the Mattermost Cluster:
@@ -289,15 +320,20 @@ Enter the nginx-ingress/ directory
 Execute the following commands:
 
     terraform init
-    terraform validate
-    terraform plan
-    terraform apply --auto-approve
 
 ![Screenshot 2024-05-15 at 5 22 42 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/07963c7c-3f52-476b-86ea-af93d615f3a5)
-![Screenshot 2024-05-15 at 5 26 48 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/d0edfa9b-144b-4f04-85f2-ae957683b93a)
-![Screenshot 2024-05-15 at 5 28 09 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/67004bd8-078f-4749-b59a-38c6a154e6e8)
-![Screenshot 2024-05-15 at 5 28 49 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/82372bf8-febf-4eb3-b789-4523fcbee4f2)
+    
+    terraform validate
 
+![Screenshot 2024-05-15 at 5 26 48 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/d0edfa9b-144b-4f04-85f2-ae957683b93a)
+    
+    terraform plan
+
+![Screenshot 2024-05-15 at 5 28 09 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/67004bd8-078f-4749-b59a-38c6a154e6e8)
+    
+    terraform apply --auto-approve
+
+![Screenshot 2024-05-15 at 5 28 49 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/82372bf8-febf-4eb3-b789-4523fcbee4f2)
 
 
 ### Step 14: Deploy the Mattermost Helm Chart with embedded MYSQL database:
@@ -307,13 +343,19 @@ Edit the mattermost-values.yml file by entering the credentials for the embedded
 Execute the following commands:
 
     terraform init
-    terraform validate
-    terraform plan
-    terraform apply --auto-approve
 
 ![Screenshot 2024-05-15 at 5 36 18 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/694d7a1f-929b-46fc-afb0-ca46e3570959)
+    
+    terraform validate
+
 ![Screenshot 2024-05-15 at 5 36 44 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/66ecebb7-3396-4afc-b89d-b2c270140bf4)
+    
+    terraform plan
+
 ![Screenshot 2024-05-15 at 5 37 11 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/11292bf7-2d73-4836-b636-e86926af57f0)
+    
+    terraform apply --auto-approve
+    
 ![Screenshot 2024-05-15 at 5 48 09 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/bf4f6a4a-3e00-4208-b112-41b1a667c376)
 
 ### Step 15: Deploy the Prometheus and Grafana Helm Charts to perform real time monitoring of all cluster resources:
@@ -322,12 +364,18 @@ Enter the observability/ directory
 Execute the following commands:
 
     terraform init
+
+![Screenshot 2024-05-15 at 5 49 59 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/97ab9ff8-6f94-4d6e-ad5b-b69c9e0dbbeb)
+    
     terraform validate
+
+![Screenshot 2024-05-15 at 5 50 17 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/aa628fd7-dfa9-4f9d-813d-8713792b44b9)
+    
     terraform plan
     terraform apply --auto-approve
 
-![Screenshot 2024-05-15 at 5 49 59 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/97ab9ff8-6f94-4d6e-ad5b-b69c9e0dbbeb)
-![Screenshot 2024-05-15 at 5 50 17 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/aa628fd7-dfa9-4f9d-813d-8713792b44b9)
+
+
 ![Screenshot 2024-05-15 at 5 51 43 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/e887898b-dd70-4baa-b159-5eea1ace25d9)
 ![Screenshot 2024-05-15 at 5 54 00 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/f13ed271-4386-4087-8334-be6d59386045)
 ![Screenshot 2024-05-15 at 5 59 25 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/b96530e0-7372-44bb-be30-be24f08d7709)
