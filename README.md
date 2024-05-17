@@ -311,7 +311,7 @@ Execute the following commands:
 
 ![Screenshot 2024-05-15 at 5 15 58 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/28bd378f-2ca6-47af-9a9f-6f3910f3b38d)
 
-### Step 13: Deploy the Nginx-Ingress Helm Chart to handle the traffic in and out to applications running in pods within the Mattermost Cluster:
+### Step 13: Deploy the Nginx-Ingress Helm Chart to handle the traffic in and out to web applications running in pods within the Mattermost Cluster:
 
 Enter the nginx-ingress/ directory
 Execute the following commands:
@@ -333,7 +333,7 @@ Execute the following commands:
 ![Screenshot 2024-05-15 at 5 28 49 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/82372bf8-febf-4eb3-b789-4523fcbee4f2)
 
 
-### Step 14: Deploy the Mattermost Helm Chart with embedded MYSQL database:
+### Step 14: Deploy the Helm Chart to create the Mattermost web app plus embedded MYSQL database containers/pods, and storegaclasses to Dynamically provision their pods with EBS storage:
 
 Enter the mattermost/ directory
 Edit the mattermost-values.yml file by entering the credentials for the embedded mysql database and the storageclass names for Mattermost & MYSQL so their pods can be dynamically provisioned EBS storage.
@@ -345,17 +345,17 @@ Execute the following commands:
     
     terraform validate
 
+    terraform plan
+
 ![Screenshot 2024-05-15 at 5 36 44 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/66ecebb7-3396-4afc-b89d-b2c270140bf4)
     
-    terraform plan
+    terraform apply --auto-approve
 
 ![Screenshot 2024-05-15 at 5 37 11 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/11292bf7-2d73-4836-b636-e86926af57f0)
     
-    terraform apply --auto-approve
-    
 ![Screenshot 2024-05-15 at 5 48 09 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/bf4f6a4a-3e00-4208-b112-41b1a667c376)
 
-### Step 15: Deploy the Prometheus and Grafana Helm Charts to perform real time monitoring of all cluster resources:
+### Step 15: Deploy the Helm Charts for creating the Prometheus and Grafana containers/pods to perform real time monitoring of all cluster resources and storageclasses to Dynamically provision their pods with EBS storage:
 
 Enter the observability/ directory
 Execute the following commands:
@@ -381,7 +381,7 @@ Execute the following commands:
 
 
 
-### Step 16: Deploy the Nginx Ingresses for Mattermost, Prometheus & Grafana to expose those apps to the internet to at matter.devopsnetwork.net, matter-monitor.devopsnetwork.net, matter-dashboard.devopsnetwork.net.:
+### Step 16: Deploy the Nginx Ingresses for the Mattermost, Prometheus & Grafana web apps to expose them to the internet at the following encrypted website URLs: matter.devopsnetwork.net, matter-monitor.devopsnetwork.net, matter-dashboard.devopsnetwork.net, respectively:
 
 Enter the ingress/ directory
 Execute the following commands:
