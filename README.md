@@ -146,27 +146,33 @@ Confirm installation by executing the kubectl command:
 ![Screenshot 2024-05-15 at 3 43 06 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/71010547-1ce9-4664-8cf0-e0fac5d59565)
 
 
-### Step 6 – Deploy Mattermost EKS Cluster and VPC with necessary permissions via IAM Service accounts to configure pods with access to EBS storage, VPC networking, Route53 for creating website url, and Application LoadBalancer to handle web traffic into and out of the cluster for deployed applications. Note:- It will take 10 – 20 mins for your cluster to be deployed.
+### Step 6 – Deploy an EKS Cluster and VPC named Mattermost with permission via IAM Service accounts to configure pods with access to EBS storage, VPC networking, Route53 to create website URLs for your deployed web apps, and Application LoadBalancer to handle web traffic into and out of the cluster to your deployed web apps. Note:- It will take 10 – 20 mins for your cluster to be deployed.
 
 Enter the eks/ directory
 Edit var.tf by entering a custom key pair you've created in AWS to setup remote ssh access to your nodes.
 Execute the following commands:
 	
     terraform init
-    terraform validate
-    terraform plan
-    terraform apply --auto-approve
-
 ![Screenshot 2024-05-15 at 3 47 31 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/96ea8eee-0fae-4ee5-8e4d-766aa6368d5c)
+    terraform validate
 ![Screenshot 2024-05-15 at 3 51 35 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/6bd97edc-066f-4cc3-9efa-8417a62c8b60)
+    terraform plan
 ![Screenshot 2024-05-15 at 3 53 09 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/d6bfb92a-a6fb-4e63-882e-c560385405cf)
+    terraform apply --auto-approve
 ![Screenshot 2024-05-15 at 3 53 42 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/02677d4b-61e4-497c-84fc-9cdf44a28ab5)
+
 ![Screenshot 2024-05-15 at 3 55 23 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/3dcff2f1-4cca-4561-b079-5784307004ce)
+
 ![image](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/264962eb-4932-46a5-ae40-dc5e98e9a3de)
+
 ![Screenshot 2024-05-15 at 4 05 14 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/0ad34313-356e-43af-b766-dbc28ff5e386)
+
 ![Screenshot 2024-05-15 at 4 05 31 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/ccb99f18-4833-4698-a738-1d0e4e268d81)
+
 ![Screenshot 2024-05-15 at 4 08 52 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/dd1ee9ea-522b-4d95-8a5e-89038d30b95e)
+
 ![Screenshot 2024-05-15 at 5 19 59 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/7ed98ec5-758f-4877-a957-5ec97b97694d)
+
 ![Screenshot 2024-05-15 at 4 11 19 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/16f9b741-d3b8-4288-8d52-7218a5084d18)
 
 
