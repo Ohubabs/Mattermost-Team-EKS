@@ -290,7 +290,7 @@ Then run these kubectl commands to create two clusterissuers to encrypt web traf
 ![Screenshot 2024-05-15 at 5 06 47 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/cab6425b-68e1-4307-a3a3-52b1665b22ad)
       
 
-### Step 12: Deploy the Application LoadBalancer Helm Chart to enable the provisioning of Application LoadBalancers on AWS for handling the web traffic going in and coming out to applications running in pods within the Mattermost Cluster:
+### Step 12: Deploy the Application LoadBalancer Helm Chart to enable the provisioning of Application LoadBalancers on AWS for handling the web traffic going in and coming out to web applications running in pods within the Mattermost Cluster:
 
 Enter the alb/ directory
 Execute the following commands:
@@ -322,9 +322,9 @@ Execute the following commands:
     
     terraform validate
 
-![Screenshot 2024-05-15 at 5 26 48 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/d0edfa9b-144b-4f04-85f2-ae957683b93a)
-    
     terraform plan
+
+![Screenshot 2024-05-15 at 5 26 48 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/d0edfa9b-144b-4f04-85f2-ae957683b93a)
 
 ![Screenshot 2024-05-15 at 5 28 09 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/67004bd8-078f-4749-b59a-38c6a154e6e8)
     
