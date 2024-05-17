@@ -147,7 +147,7 @@ Confirm installation by executing the kubectl command:
 ![Screenshot 2024-05-15 at 3 43 06 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/71010547-1ce9-4664-8cf0-e0fac5d59565)
 
 
-### Step 6 – Deploy an EKS Cluster and VPC named Mattermost with permission via IAM Service accounts to configure pods with access to EBS storage, VPC networking, Route53 to create website URLs for your deployed web apps, and Application LoadBalancer to handle web traffic into and out of the cluster to your deployed web apps. Note:- It will take 10 – 20 mins for your cluster to be deployed.
+### Step 6 – Deploy an EKS Cluster and VPC named Mattermost with permission, via IAM Service accounts, to configure pods with access to EBS storage, VPC networking, Route53 to create website URLs for your deployed web apps, and provision an Application LoadBalancer to handle web traffic into and out of the cluster to your deployed web apps. Note:- It will take 10 – 20 mins for your cluster to be deployed.
 
 Enter the eks/ directory
 Edit var.tf by entering a custom key pair you've created in AWS to setup remote ssh access to your nodes.
