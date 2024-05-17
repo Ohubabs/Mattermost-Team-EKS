@@ -234,7 +234,7 @@ Execute the following commands:
 ![Screenshot 2024-05-15 at 4 27 32 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/c0409549-b200-411a-966d-da634a5e92a3)
 
 
-### Step 10: Deploy the External DNS helm chart to handle setting up apps within the Mattermost Cluster with domain names/website url for easy access on the internet. 
+### Step 10: Deploy the External DNS helm chart to handle setting up web apps within the Mattermost Cluster with domain names/website url for easy access on the internet. 
 Enter the exposure/ directory
 Execute the following commands:
 
@@ -252,7 +252,8 @@ Execute the following commands:
     
     terraform apply --auto-approve
 
-![Screenshot 2024-05-15 at 4 56 12 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/c338dcc8-cd20-484b-b176-f86722b2d0b4)
+![Screenshot 2024-05-15 at 4 56 12 PM](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/975642e6-38e1-4328-80e9-3bb509c88011)
+
 
 
 
