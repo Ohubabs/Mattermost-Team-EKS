@@ -26,7 +26,7 @@ Mattermost website: https://mattermost.com/
 
 ## Project Instructions
 
-1 – Launch an EC2 instance and install Terraform onto the VM
+1 – Launch an EC2 instance and install Terraform onto an AWS EC2 instance.
 
 2 – Once the instance is setup, clone this repository
 
