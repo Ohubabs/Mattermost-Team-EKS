@@ -2,8 +2,22 @@
 
 ## Background
 
-In my UT Austin Post-Graduate Cloud Computing course, I was given a project assignment to manually deploy an open source team collaboration website called Mattermost connected to a MYSQL database. For extra security, a bastion host design setup was to be used with the database installed on an instance within a private subnet leaving only the Mattermost website exposed to the internet by being installed on an instance running in a public subnet. In addition, the instructions stated that  provisioning of the instances and setting up the network configurations should be done via the AWS Management Console website. As a DevOps Engineer, I had a problem with the manual workflow of the project which made it time-consuming and error-prone. So, I decided to make a few changes. First instead of the AWS Management Console, I will use a popular Infrastructure-as-a-Code tool called Terraform to provision all cloud infrastructure. Next, in lieu of manually installing Mattermost and MYSQL directly onto Virtual Machines/Instances, I will be using containers of both software programs and deploying them within an EKS Kubernetes cluster for high level orchestration using helm charts. Then, I will securely expose the Mattermost web app to the internet with a custom url using an NGINX Ingress Controller that encrypts data moving in and out of the cluster using Lets Encrypt Certificates issued by Cert Manager deployed within the cluster. Finally, I will deploy Prometheus and Grafana to enable real-time monitoring of the Mattermost cluster's resources e.g. the containers running the mattermost app and MYSQL database.
+In my UT Austin Post-Graduate Cloud Computing course, I was given a project assignment to manually deploy an open source team collaboration website called Mattermost connected to a MYSQL database. For extra security, a bastion host design setup was to be used with the database installed on an instance within a private subnet leaving only the Mattermost website exposed to the internet by being installed on an instance running in a public subnet. In addition, the instructions stated that  provisioning of the instances and setting up the network configurations should be done via the AWS Management Console website. As a DevOps Engineer, I had a problem with the manual workflow of the project which made it time-consuming and error-prone. So, I decided to make a few changes. First instead of the AWS Management Console, I will use a popular Infrastructure-as-a-Code tool called Terraform to provision all cloud infrastructure. Next, in lieu of manually installing Mattermost and MYSQL directly onto Virtual Machines/Instances, I will be using containers of both software programs and deploying them within an EKS Kubernetes cluster for high level orchestration using helm charts. Then, I will securely expose the Mattermost web app to the internet with a custom url using an NGINX Ingress Controller that encrypts data moving in and out of the cluster using Lets Encrypt Certificates issued by Cert Manager deployed within the cluster. Finally, I will deploy Prometheus and Grafana to enable real-time monitoring of the Mattermost cluster's resources.
+With this strategy, you benefit from being able to:
 
+1 - Easily setup AWS Cloud Infrastructure, Kubernetes, and Installing applications by automating the process using Terraform.
+
+2 - Deploy applications fast through the use of containers and helm. After your EKS cluster is setup, which takes approximately 15 - 20 mins, you can deploy all applications within less than 5 minutes with proper configuration.
+
+3 - Peform Zero downtime upgrades with containers and Kubernetes's deployment rolling updates.
+
+4 - Leverage better Security than the Bastion Host setup by utilizing Nginx-Ingress as a reverse proxy behind an Application Loadbalancer, securely routing traffic to applications running in the cluster. If there is an attack, your applications are protected as it would crash your Nginx-Ingress pod first before it can reach them.
+
+5 - Gain Real Time Analytics on how your applications are performing by using Prometheus to track metrics such as CPU and memory usage for the containers running the mattermost app and MYSQL database, then, visualizing them with Grafana which can also be configured to send alerts to your development/operations teams for quick troubleshooting of issues. In the original setup, you're limited to VM level monitoring with cloudwatch.
+
+6 - Efficient use of Storage through stateful deployments with Kubernetes that allow each application container running in a Kubernetes pod to get its own EBS storage volume. This reduces the over-utilization of resources for the host server the applications are deployed on.
+
+ 
 ## Project Scenario
 
 You are working at a small enterprise with 50 or less employees. To help development teams across the organization collaborate and communicate effectively while aligning with the company’s security policies, the management team has instructed the IT department to launch Mattermost Team Edition. Mattermost is an open source platform that provides secure collaboration for technical and operational teams that work in environments with complex nation-state level security and trust requirements. Mattermost is built specifically for technical and operational use cases, including software development and engineering workflows, and integrates deeply with a rich ecosystem of third-party developer tools. Mattermost gives companies full control over their data; with self-hosted and private cloud deployment options and access to the source code, developers can contribute directly to a shared, flexible, and extensible platform built just for them. With Mattermost Team Edition, the free open-source version, organizations get to enjoy the following benefits:-
@@ -23,6 +37,11 @@ Mattermost website: https://mattermost.com/
 -	AWS EKS Cluster
 -	Kubernetes cluster add-ons External DNS, Certificate Manager, Application LoadBalancer Controller, and Nginx Ingress Controller to securely expose apps within the cluster to the internet with 	custom urls
 -	Monitoring Software
+
+## Project Design
+
+![Mattermost Project - Page 1 (1)](https://github.com/Ohubabs/Mattermost-Team-EKS/assets/68171102/e1c27062-cf22-4f04-9953-f9da58047aac)
+
 
 ## Project Instructions
 
